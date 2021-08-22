@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+        home-work4:
+                image: home-work3
+                command: ["python", "-u", "./hello-world.py"]
+                
+        home-work5:
+                build:
+                 context: .
+                 dockerfile: ./Dockerfile2
+                command: ["python", "-u", "./goodbye-world.py"]
+                     
